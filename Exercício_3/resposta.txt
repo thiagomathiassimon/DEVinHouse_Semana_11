@@ -1,0 +1,11 @@
+Dado o fragmento de código:
+   int i = 15; // idade
+    if (i < 18) { // Se for menor idade
+        throw new RuntimeException("Pessoa menor de idade");
+    }
+Pode-se admitir como refatoração:
+  private static final int ADULTHOOD = 18; 
+  int userAge = 15;
+  if (userAge < ADULTHOOD){
+    throw new RuntimeException("Pessoa menor de idade");
+  }
