@@ -1,0 +1,1 @@
+Preferivelmente, uma função bem escrita deverá possuir, no máximo, uma responsabilidade.
