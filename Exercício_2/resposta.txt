@@ -1,0 +1,7 @@
+Dada a declaração de variável:
+  String ddmmyyyy; // Data nascimento
+Pode-se admitir como erros:
+  1 - A nome da variável não é de fácil pronunciamento;
+  2 - Embora a estrutura 'ddmmyyyy' seja conhecida pela maioria dos programadores, trata-se duma codificação, o que aumenta a complexidade do código;
+  3 - Mesmo sendo entendível que se trata duma data, o nome da variável ainda não possue grande clareza, outossim não consta o objeto de alusão da variável; e
+  4 - A nomenclatura genérica pode causar, como problema secundário, dificuldade na hora de nomear outra variável relativa a data.
