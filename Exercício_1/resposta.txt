@@ -1,0 +1,5 @@
+Seguindo os conceitos do Clean Code, poder-se-á ter:
+
+    String productName = "Produto"; // Nome Produto
+		Double productValueInReais = 100.00d;  // Valor Produto
+		Date fabricationDate; // Data fabricação
