@@ -1,0 +1,18 @@
+Segundo o livro Clean Code, os comentários devem ser evitados ao máximo, haja vista que o código,
+por si só, deve conseguir comunicar tudo o que for necessário.
+Todavia, admitem-se alguns casos nos quais os comentários podem ser úteis, dentre os quais:
+  - Comentários Legais: são aqueles que fazem referências a direitos autorais e referenciam documentos externos;
+  - Comentários Informativos: informam sobre tipos de retornos (esses comentários são considerados bons quando explicam um código ao qual você não tem acesso);
+  - Explicação da intenção: fornecem informações úteis sobre as decisões tomadas;
+  - Esclarecimento: traduzem o significado de parâmetros ou valores obscuros (devem ser evitados e, caso não seja possível evitá-los, tomar muito cuidado com sua precisão, para que não se tornem mentirosos);
+  - Alerta Sobre Consequências: alerta sobre as consequências de utilizar-se determinado bloco de códigos (normalmente estão relaciondos a performance); e
+  - Comentário TODO: esses comentários indicam a necessidade de alguma ação (refatorar, renomear etc). Devem ser removidos após ação ter sido concluída.
+Como exemplo de código com comentário, ter-se-á:
+
+{
+  //SimpleDateFormat não é uma thread segura,
+  //é preciso criar cada instância independentemente.
+  SimpleDateFormat df = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss z");
+  df.setTimeZone(TimeZone.getTimeZone("GMT"));
+  return df;
+}
