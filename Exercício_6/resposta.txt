@@ -1,0 +1,2 @@
+Segundo o livro Clean Code, e o Princípio da Responsabilidade Única (SRP),
+o ideal é que uma classe possua apenas uma responsabilidade e um motivo para mudar.
