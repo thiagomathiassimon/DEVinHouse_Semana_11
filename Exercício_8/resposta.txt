@@ -1,0 +1,13 @@
+    void imprimirDivida(String nome, double quantia) {
+        imprimirCabecalho();
+        // imprime detalhes
+        System.out.println("Nome: " + nome);
+        System.out.println("Quantia: " + quantia);
+    }
+
+Uma possibilidade de refatoração do código acima é:
+
+    void imprimirDivida(String nome, double divida){
+      imprimirDetalhes();
+      System.out.println("Nome: " + nome + "\nDívida: " + divida);
+    }
