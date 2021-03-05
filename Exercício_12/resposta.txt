@@ -1,0 +1,30 @@
+public boolean validarSenha(Usuario usuario, String senha) {
+    boolean r = false;
+    if (usuario.getSenhaAtual().equals(senha)) {
+        r = true;
+    } else {
+        r = false;
+        usuario.setQtTentativasLoginErrados(usuario.getQtTentativasLoginErrados() + 1);
+        if (usuario.getQtTentativasLoginErrados() > 3) {
+            usuario.bloquearLogin();
+        }
+    }
+    return r;
+}
+
+Uma possível refatoração para o método acima é:
+
+public boolean validarSenha(Usuario usuario, String senha) {
+  boolean isSenhaCorreta = false;
+  if(usuario.getSenhaAtual().equals(senha)) {
+    return isSenhaCorreta = true;
+  } else {
+    int tentaivasDeLogin = usuario.getQuantidadeDeTentativasDeLoginFalhas();
+    usuario.setQuantidadeDeTentativasDeLoginFalhas(tentaivasDeLogin + 1);
+    if (tentaivasDeLogin > 3) {
+      usuario.bloquearLogin();
+    }
+    return isSenhaCorreta;
+  }
+}
+
