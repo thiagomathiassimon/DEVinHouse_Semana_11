@@ -1,0 +1,11 @@
+	void salvaPessoa(Integer codigo, String nome, Date dataDeNascimento, String cpf, String rg, String telefone) { 
+		// ignore
+	}
+
+Uma possível refatoração para o método acima é:
+
+	static void salvarPessoa(Pessoa pessoa){
+
+	}
+
+Onde Pessoa é uma clase que possui as variáveis passadas como parâmetro.
