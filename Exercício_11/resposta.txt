@@ -1,0 +1,8 @@
+
+	// Verifica se a conta está utilizando o cheque especial
+	if (conta.getTipo).equals(“CORRENTE”) && conta.getSaldo() < 0) {  }
+
+Uma possível reatoração do código acima é:
+
+  final int VALOR_MINIMO = 0;
+  boolean usandoChequeEspecial = ((conta.getTipo).equalsIgnoreCase("CORRENTE") && conta.getSaldo() <= VALOR_MINIMO) ? true : false; 
