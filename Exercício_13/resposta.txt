@@ -1,0 +1,12 @@
+
+// Classe para gerar relatorios
+public class Gerador {
+    // Gera o relatorio contabil
+    public void relatorio1() { }
+}
+
+Uma possível refatoração para o código acima é:
+
+public class GeradorDeRelatorios {
+    public void relatorioContabil() { }
+}
