@@ -1,0 +1,13 @@
+public class Ave {
+   void voar() {
+        System.out.println("Voando!!");
+    }
+}
+public class Pinguim extends Ave {
+    void voar() {
+        throw new IllegalStateException("Um Pinguim não pode voar");   
+    }
+}
+
+No código acima, pode-se identificar a "Herança Recusada", a qual ocorre quando uma classe herda
+partes de outra que não precisaria.
